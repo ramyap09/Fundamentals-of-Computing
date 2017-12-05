@@ -20,3 +20,8 @@ So, if Player1 chooses Spock and Player2 chooses paper,  Player2 wins as paper i
 
 ### RPSLS_GUI.py
 This is the interactive Graphical Use Interface for the rock-Spock-paper-lizard-scissors game.
+
+### Guess_the_number.py
+
+Guess_the_number.py implements a two player game using a Graphical User Interface. First player (here, the computer) thinks of a secret number and the second player(yourself)  has to guess this number correctly, in 7 attempts or in 10 attempts based on whether the computer's secret number is in the range of (0-100) or of (0-1000) respectively (both the ranges are upper-bound exclusive). After each attempt, the first player has to respond whether his secret number is higher/lower than the current guess if not correct.
+
