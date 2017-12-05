@@ -3,7 +3,7 @@ The assignments in the Fundamentals of Computing Specialization offered by Rice 
 
 ## Course1 : Interactive Programming in Python (Part1)
 ### RPSLS.py
-rock-Spock-paper-lizard-scissors is a hand game played by 2 players. Each of the Players get to choose one of these 5 names. When they disclose their choice, the player who happened to choose the dominant one of the two choices wins the game. The dominant one in any pair can be determined based on the following set of rules.
+This is the implementation of the hand game rock-Spock-paper-lizard-scissors usually played by 2 players. Each of the Players get to choose one of these 5 names. When they disclose their choice, the player who happened to choose the dominant one of the two choices wins the game. The dominant one in any pair can be determined based on the following set of rules.
 
 * scissors cuts paper
 * paper covers rock
@@ -16,4 +16,7 @@ rock-Spock-paper-lizard-scissors is a hand game played by 2 players. Each of the
 * Spock vaporizes rock
 * rock crushes scissors
 
-So, if Player1 chooses Spock and Player2 chooses paper,  Player2 wins as paper is the dominant one (paper disproves Spock )
+So, if Player1 chooses Spock and Player2 chooses paper,  Player2 wins as paper is the dominant one of the two (paper disproves Spock )
+
+### RPSLS_GUI.py
+This is the interactive Graphical Use Interface for the rock-Spock-paper-lizard-scissors game.
