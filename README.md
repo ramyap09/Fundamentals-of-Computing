@@ -6,17 +6,17 @@ The assignments in the Fundamentals of Computing Specialization offered by Rice 
 This is the implementation of the hand game rock-Spock-paper-lizard-scissors usually played by 2 players. Each of the Players get to choose one of these 5 names. When they disclose their choice, the player who happened to choose the dominant one of the two choices wins the game. The dominant one in any pair can be determined based on the following set of rules.
 
 * scissors cuts paper
-* paper covers rock
-* rock crushes lizard
-* lizard poisons Spock
-* Spock smashes scissors
 * scissors decapitates lizard
-* lizard eats paper
+* paper covers rock
 * paper disproves Spock
-* Spock vaporizes rock
+* rock crushes lizard
 * rock crushes scissors
+* lizard poisons Spock
+* lizard eats paper
+* Spock smashes scissors
+* Spock vaporizes rock
 
-So, if Player1 chooses Spock and Player2 chooses paper,  Player2 wins as paper is the dominant one of the two (paper disproves Spock )
+It is clear that each of the 5 choices wins against two other choices and loses to two other choices. So, if Player1 chooses Spock and Player2 chooses paper,  Player2 wins as paper wins over Spock (paper disproves Spock )
 
 ### RPSLS_GUI.py
 This is the interactive Graphical Use Interface for the rock-Spock-paper-lizard-scissors game.
