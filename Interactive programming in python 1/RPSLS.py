@@ -58,7 +58,7 @@ def rpsls(player_choice):
 
 
 # Here , it keeps asking for the input, until a valid input is typed in.
-# The valid inputs are "rock", "Spock", "paper", "lizard", "scissors" - case sensitive
+# The valid inputs are "rock", "Spock", "paper", "lizard", and "scissors" - case sensitive
 while True:
     x = input("Enter your choice(rock/Spock/paper/lizard/scissors): ")
     if x not in ["rock", "paper", "lizard", "scissors", "Spock"]:
