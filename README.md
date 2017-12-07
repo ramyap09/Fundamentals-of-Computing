@@ -28,8 +28,8 @@ Guess_the_number.py implements a two player game using a Graphical User Interfac
 ### dollar_cent.py
 
 In this simple interactive program, when an amount is entered as a digit, the program will print on canvas, this amount as number of dollars and cents. 
-*eg.,
-*input = 54.56
-*output = 54 dollars and 56 cents
+* eg.,
+* input = 54.56
+* output = 54 dollars and 56 cents
 
 
