@@ -45,7 +45,7 @@ def converter():
     except:
         canvas1.create_text(150,0, font=("Purisa", 14), text= "Enter a valid input ", anchor=N)
 
-# Creating Label, Button and Canvas
+# Creating Label, Entry box, Button and Canvas
 label_1 = Label(window, text="Enter the number :").pack()
 sv= DoubleVar()
 e1 = Entry(window, textvariable = sv)
