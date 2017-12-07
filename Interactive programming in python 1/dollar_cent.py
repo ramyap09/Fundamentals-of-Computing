@@ -1,6 +1,6 @@
 from tkinter import *
 window = Tk()
-window.title("Dollar Cent converter")
+window.title("Dollar - Cent converter")
 window.geometry("450x500+800+50")
 
 def conversion_doll(doll):
