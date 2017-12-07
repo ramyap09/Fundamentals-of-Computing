@@ -25,3 +25,11 @@ This is the interactive Graphical Use Interface for the rock-Spock-paper-lizard-
 
 Guess_the_number.py implements a two player game using a Graphical User Interface. First player (here, the computer) thinks of a secret number and the second player(yourself)  has to guess this number correctly, in 7 attempts or in 10 attempts based on whether the computer's secret number is in the range of (0-100) or of (0-1000) respectively (both the ranges are upper-bound exclusive). After each attempt, the first player has to respond whether his secret number is higher/lower than the current guess if not correct.
 
+### dollar_cent.py
+
+In this simple interactive program, when an amount is entered as a digit, the program will print on canvas, this amount as number of dollars and cents. 
+eg.,
+input = 54.56
+output = 54 dollars and 56 cents
+
+
