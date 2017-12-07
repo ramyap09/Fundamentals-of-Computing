@@ -18,9 +18,9 @@ def conversion_cent(cent):
     This function returns the properly formatted cent part of the output
     """
     if cent == 1:
-        y = str(cent) + "cent"
+        y = str(cent) + " " + "cent"
     else:
-        y = str(cent) + "cents"
+        y = str(cent) + " " + "cents"
     return y
 
 def converter():
