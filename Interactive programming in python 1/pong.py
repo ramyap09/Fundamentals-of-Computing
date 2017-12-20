@@ -30,7 +30,7 @@ def ball_move():
                 player2_score += 1
                 player = 2
                 canvas1.itemconfigure(score2, text=player2_score)
-                print("touched left wall")
+                print("Touched left wall. Player 2 scores")
 
         elif x1 >= c_width- (20 +ball_diameter):
             if y1 >= p2_h1 and y1 <= p2_h1 + p_height :
@@ -43,7 +43,7 @@ def ball_move():
                 player1_score += 1
                 player = 1
                 canvas1.itemconfigure(score1, text=player1_score)
-                print("touched right wall")
+                print("Touched right wall. Player1 scores")
     else:
         pass
     canvas1.coords(circle, x1, y1, x1+ball_diameter,y1+ball_diameter)
@@ -143,7 +143,7 @@ window.bind('<Up>', P1_up_move)
 window.bind('<Down>', P1_down_move)
 window.bind('<B1-Motion>', P2_move)
 
-# Initializing the game score board
+# Initializing the game score board. Player1 is the left side player and Player2 is the right side player
 player1_score = 0
 player2_score = 0
 score1 = canvas1.create_text(100,100, font=("Purisa", 25), text = player1_score, fill = "White")
