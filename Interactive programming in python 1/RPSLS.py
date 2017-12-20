@@ -1,4 +1,11 @@
+from tkinter import *
 import random
+
+
+window = Tk()
+window.geometry("500x200")
+window.title("rock-paper-scissors-lizard-Spock : The game")
+
 
 def name_to_number(name):
     """
@@ -15,7 +22,10 @@ def name_to_number(name):
     elif name == "scissors":
         return 4
     else:
-        print("Incorrect input. Try again ")
+        label1.config(text= "invalid input. Try again")
+        label2.config(text="")
+        label3.config(text="")
+        return None
 
 
 
@@ -37,33 +47,38 @@ def number_to_name(number):
         pass
 
 
-def rpsls(player_choice):
+def rpsls():
     """
     Given a name, this function prints out who wins the game (you or the computer) based on the the game rules
     """
-    player_number = name_to_number(player_choice)
+    choice = sv.get()
+    player_number = name_to_number(choice)
     comp_number = random.randrange(0,5)
-    print("Player chooses {}".format(number_to_name(player_number)))
-    print("Computer chooses {}".format(number_to_name(comp_number)))
-    diff = (player_number - comp_number) % 5
-    if diff == +1 or diff == +2:
-        print("Player wins \n")
-    elif diff == +3 or diff == +4:
-        print("Computer wins \n")
-    elif diff == 0:
-        print("Player Computer tie ! \n")
+    if player_number != None:
+        label1.config(text="Player chooses {}".format(number_to_name(player_number)))
+        label2.config(text="Computer chooses {}".format(number_to_name(comp_number)))
+        diff = (player_number - comp_number) % 5
+        if diff == +1 or diff == +2:
+            label3.config(text="Player wins")
+        elif diff == +3 or diff == +4:
+            label3.config(text="Computer wins")
+        else:
+            label3.config(text="Player Computer tie !")
     else:
-        print("Try again")
+        e1.delete(0,END)
 
 
+# Creating Labels, Button, and Entry box
+Label(window, text="Entre your choice (rock/paper/scissors/lizard/Spock) : ").grid(row=0, column=0, pady=(20, 10), padx=(20,0))
+button_ok = Button(window, text='OK', command=rpsls).grid(row=1, column=1)
+sv = StringVar()
+e1 = Entry(window, textvariable = sv)
+e1.grid(row=0, column=1)
+label1 = Label(window, text="")
+label1.grid(row=4, column=0)
+label2 = Label(window, text="")
+label2.grid(row=5, column=0)
+label3 = Label(window, text="")
+label3.grid(row=6, column=0)
 
-# Here , it keeps asking for the input, until a valid input is typed in.
-# The valid inputs are "rock", "Spock", "paper", "lizard", and "scissors" - case sensitive
-while True:
-    x = input("Enter your choice(rock/Spock/paper/lizard/scissors): ")
-    if x not in ["rock", "paper", "lizard", "scissors", "Spock"]:
-        print("Please check the input and try again")
-        continue
-    else:
-        break
-rpsls(x)
+window.mainloop()
