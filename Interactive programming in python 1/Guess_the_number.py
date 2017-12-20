@@ -5,6 +5,7 @@ window = Tk()
 window.geometry("500x300")
 window.title("Guess the number - The game")
 
+
 def range100():
     """
     This function generates a random number in the range of [0-100) and stores it in the variable secret_number
@@ -16,6 +17,7 @@ def range100():
     print("New game starts... Guess a number in the range [0-100). Maximum of 7 attempts allowed")
     secret_number = random.randrange(0,100)
 
+
 def range1000():
     """
     This function generates a random number in the range of [0-1000) and stores it in the variable secret_number
@@ -26,6 +28,7 @@ def range1000():
     counter =0
     print("New game starts... Guess a number in the range [0-1000). Maximum of 10 attemts allowed")
     secret_number = random.randrange(0,1000)
+
 
 def input_guess():
     """
@@ -64,6 +67,8 @@ def input_guess():
         else:
             range1000()
 
+
+# Creating the Labels, Buttons and Entry box
 Label(window, text="Select the range of numbers : ").grid(row=0, column=0, sticky=E)
 button_range100 = Button(window, text='Range [0-100)', command=range100).grid(row=0, column=1)
 button_range1000 = Button(window, text="Range [0-1000)", command = range1000).grid(row=0, column=2)
@@ -72,7 +77,7 @@ sv = IntVar()
 e1 = Entry(window, textvariable = sv)
 e1.grid(row=5, column=1)
 button_ok = Button(window, text = "OK", command= input_guess).grid(row=6, column=1)
-#button_quit = Button(window, text="QUIT", fg="red", width=25, command=quit).grid(row=7, column=2, sticky=W, pady=4)
+
 e1.delete(0,END)
 range100()
 window.mainloop()
