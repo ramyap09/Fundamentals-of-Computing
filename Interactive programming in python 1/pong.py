@@ -141,7 +141,8 @@ circle = canvas1.create_oval(x1,y1,x1+ball_diameter,y1+ball_diameter, fill="Gray
 # Binding the paddle movement to the keyboard keys and the mouse
 window.bind('<Up>', P1_up_move)
 window.bind('<Down>', P1_down_move)
-window.bind('<B1-Motion>', P2_move)
+window.bind('<Motion>',P2_move)
+
 
 # Initializing the game score board. Player1 is the left side player and Player2 is the right side player
 player1_score = 0
