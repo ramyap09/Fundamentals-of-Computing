@@ -1,3 +1,8 @@
+"""
+Implementation of stop watch
+"""
+
+
 from tkinter import *
 
 window = Tk()

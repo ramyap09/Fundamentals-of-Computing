@@ -1,3 +1,9 @@
+"""
+Building the GUI for the game "rock-paper-scissors-lizard-Spock" .
+
+"""
+
+
 from tkinter import *
 import random
 
@@ -49,7 +55,7 @@ def number_to_name(number):
 
 def rpsls():
     """
-    Given a name, this function prints out who wins the game (you or the computer) based on the the game rules
+    Given a name as input, this function prints out who wins the game (you or the computer) based on the the game rules
     """
     choice = sv.get()
     player_number = name_to_number(choice)

@@ -1,5 +1,5 @@
 """
-This simple code implements one GUI, the background colour of the canvas on it can be toggled between 'White' and "Red" by pressing the button provided.
+This simple code implements a GUI, the background colour of the canvas on it can be toggled between 'White' and "Red" by pressing the button provided.
 """
 
 from tkinter import *

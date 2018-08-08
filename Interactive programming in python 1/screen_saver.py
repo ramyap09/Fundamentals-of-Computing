@@ -1,3 +1,7 @@
+"""
+Implementation of a simple screen saver with a custom message
+"""
+
 from tkinter import *
 import random
 

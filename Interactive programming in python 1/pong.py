@@ -1,3 +1,7 @@
+"""
+Implementation of classic arcade video game "Pong". Game starts once the spacebar is pressed.
+"""
+
 from tkinter import *
 import random
 
@@ -80,8 +84,8 @@ def P2_move(event):
     """
     global p2_h1, p_height, c_height
     position = event.y
-    if position > 0 and position < (c_height - p_height) :
-        p2_h1 = position - (p_height/2)
+    if position > 0 and position <= (c_height - p_height) :
+        p2_h1 = position
     canvas1.coords(paddle_2, 780, p2_h1, 800,p2_h1+p_height)
 
 
@@ -129,8 +133,8 @@ x1 = 0+20
 y1 = c_height /2
 
 # Initial velocity of the ball
-dx = 10
-dy = 12
+#dx = 10
+#dy = 12
 
 # Creating the ball
 ball_diameter = 50
