@@ -1,3 +1,7 @@
+"""
+"Guess the number" mini-project
+"""
+
 import random
 from tkinter import *
 
