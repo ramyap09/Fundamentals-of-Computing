@@ -21,6 +21,34 @@ This is the implementation of the hand game rock-Spock-paper-lizard-scissors usu
 
 It is clear that each of the 5 choices wins against two other choices and loses to two other choices. So, if Player1 chooses Spock and Player2 chooses paper,  Player2 wins as paper wins over Spock (paper disproves Spock )
 
+### circle_radius_button.py
+
+This implements a GUI which pictures a circle and two buttons to change the radius (increase/decrease) of the circle interactively.
+
+
+### circle_radius_key.py
+
+This implements a GUI which pictures a circle, whose radius can be increased or decreased interactively by pressing the Up arrow key
+and Down arrow key of the keyboard respectively.
+
+### colorToggler_button.py
+
+This simple code implements a GUI, the background colour of the canvas on it can be toggled between 'White' and "Red" by pressing the button provided.
+
+
+### colorToggler_timer.py
+
+This simple code implements one GUI, the background colour of the canvas on it toggles between "Red" and "Green" in fixed time intervals.
+
+
+### dollar_cent.py
+
+In this simple interactive program, when an amount is entered as a digit, the program will print on canvas, this amount as number of dollars and cents. 
+
+eg.,
+* input = 54.56
+* output = 54 dollars and 56 cents
+
 ### pong.py
 
 This is the implementation of the classic arcade video game 'pong' whch is an electronic tennis game played by two players. Both the players move their respective paddles to strike the ball, and when one player misses the strike the other player scores the point.
