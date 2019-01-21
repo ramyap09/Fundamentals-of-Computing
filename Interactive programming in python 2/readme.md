@@ -12,3 +12,7 @@ restarts the drawing process
 ### image_load.py
 
 Show image from URL
+
+### memory.py
+
+Memory is a card game in which the player deals out a set of cards face down. In Memory, a turn (or a move) consists of the player flipping over two cards. If they match, the cards remain face up. If they don't match, the cards get back to face down. The goal of Memory is to end up with all of the cards flipped face up in the minimum number of turns. In this game, the model for Memory fairly simple consisting of eight pairs of matching cards.
