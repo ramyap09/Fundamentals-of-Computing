@@ -1,5 +1,5 @@
 """
-Building the card game named memory
+Building the card game named Memory
 """
 
 import random
@@ -30,16 +30,14 @@ def reset():
     """
     global exposed, clicked_num_index_lst, text_id, clicked_num_lst, state, turns, lst
     exposed = [False]*16
-    clicked_num_index_lst = []
     canvas1.delete('numbers')  # Here deleted all the objects with the tag "numbers"
-    text_id=[]
     clicked_num_lst=[]
+    clicked_num_index_lst = []
+    text_id=[]
     state=0
     turns=0
     label_turns.config(text = "Turns = 0 ")
-    lst1 = list(range(8))
-    lst2 = list(range(8))
-    lst = lst1 + lst2
+    lst = list(range(8)) * 2
     random.shuffle(lst)
 
 
