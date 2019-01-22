@@ -17,7 +17,7 @@ def newgame():
     global lst
     x1,y1,x2,y2 = 10, 10, 60, 110
     for index, item in enumerate(lst):
-        id = canvas1.create_rectangle(x1, y1, x2, y2, fill = "White", tags="rectangle")   # Draw these rectangles only once, otherwise id will get altered
+        id = canvas1.create_rectangle(x1, y1, x2, y2, fill = "Blue", tags="rectangle")   # Draw these rectangles only once, otherwise id will get altered
         x1 = x1 + 50
         x2 = x2 + 50
 
@@ -62,7 +62,7 @@ def click(event):
         #print(canvas1.gettags(c))
         m = canvas1.coords(c)   # m is the coodinates of the box clicked
         if exposed[c-1] == False:
-            t_id = canvas1.create_text(m[0]+25, m[1]+50, fill = "Black", text=lst[c-1], tags="numbers")
+            t_id = canvas1.create_text(m[0]+25, m[1]+50, fill = "Black", font = ("Purisa", 20), text=lst[c-1], tags="numbers")
             #print(canvas1.gettags(t_id))
             text_id.append(t_id)
             clicked_num_lst.append(lst[c-1])
